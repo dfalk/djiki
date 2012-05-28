@@ -32,6 +32,7 @@ setup(
     install_requires = [
         'setuptools',
         'creole',
+        'diff-match-patch',
         ],
 
     classifiers = [
