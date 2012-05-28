@@ -1,15 +1,20 @@
 {% extends 'base.html' %}
+{% comment %}
+  To fit the wiki into your site, provide your own 'djiki/base.html' that
+  will override this one, or provide a 'base.html' template that
+  has a 'page' block.
+{% endcomment %}
 {% block page %}
 <div class="djiki">
-	<div class="actions container_12">
-		<div class="grid_12">
-		{% block djiki_actions %}{% endblock %}
-		</div>
-		<div class="clear"></div>
-	</div>
-	<div class="main container_12">
-		{% block djiki_main %}{% endblock %}
-		<div class="clear"></div>
-	</div>
+    <div class="actions container_12">
+        <div class="grid_12">
+        {% block djiki_actions %}{% endblock %}
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="main container_12">
+        {% block djiki_main %}{% endblock %}
+        <div class="clear"></div>
+    </div>
 </div>
 {% endblock %}
