@@ -4,6 +4,9 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 
+IMAGES_PATH = getattr(settings, 'DJIKI_IMAGES_PATH', 'djiki/')
+
+
 class Versioned(object):
     def last_revision(self):
         try:
@@ -69,4 +72,4 @@ class Image(models.Model, Versioned):
 
 class ImageRevision(Revision):
     image = models.ForeignKey(Image, related_name='revisions')
-    file = models.FileField(_("File"), upload_to=settings.DJIKI_IMAGES_PATH)
+    file = models.FileField(_("File"), upload_to=IMAGES_PATH)
