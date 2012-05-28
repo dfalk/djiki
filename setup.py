@@ -20,7 +20,7 @@ def find_package_data(pkg, filetypes):
 setup(
     name = 'djiki',
     version = '0.4',
-    url = 'http://github.com/surbas/djiki',
+    url = 'http://github.com/dfalk/djiki',
     license = 'BSD License',
     description = 'A Django wiki application.',
     long_description = read('README.rst'),
