@@ -18,9 +18,9 @@ def find_package_data(pkg, filetypes):
     return out
 
 setup(
-    name = 'django-wiki',
+    name = 'djiki',
     version = '0.4',
-    url = 'http://github.com/spookylukey/django-wiki',
+    url = 'http://github.com/surbas/djiki',
     license = 'BSD License',
     description = 'A Django wiki application.',
     long_description = read('README.rst'),
